@@ -12,7 +12,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <link rel="stylesheet" type="text/css" href="<?php echo site_url(); ?>/wp-content/themes/articles-template/public/assets/css/styles.css" >
+  <link rel="stylesheet" type="text/css" href="<?php echo site_url(); ?>/wp-content/themes/starting-template/public/assets/css/styles.css" >
 
 </head>
 
@@ -24,12 +24,12 @@
     <h1><?php the_title() ?></h1>
   </header> 
 
-  <nav>
-      
-    <ul>
-      <li><a href="<?php echo site_url(); ?>">Home</a></li>
-      <li><a href="<?php echo site_url(); ?>/sample-page">Sample Page</a></li>
-      <li><a href="<?php echo site_url(); ?>/contact">Contact</a></li>
-    </ul>
+  <?php
+      $main_menu = array(
+      'theme_location' => 'main-menu',
+      'container' => '',
+      'items_wrap' => '<ul>%3$s</ul>'
+      );
+    ?>
 
-  </nav>
+  <nav><?php wp_nav_menu($main_menu); ?></nav>
