@@ -12,7 +12,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <link rel="stylesheet" type="text/css" href="<?php echo site_url(); ?>/wp-content/themes/insightful/public/assets/css/main.css" >
+  <link rel="stylesheet" type="text/css" href="<?php echo site_url(); ?>/wp-content/themes/starting-template/public/assets/css/styles.css" >
 
 </head>
 
@@ -21,7 +21,7 @@
   
 
   <header>
-    <h1><?php wp_title() ?></h1>
+    <h1><?php the_title() ?></h1>
   </header> 
 
   <nav>
@@ -33,6 +33,3 @@
     </ul>
 
   </nav>
-
-  
-
