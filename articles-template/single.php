@@ -8,6 +8,12 @@
                 			
                         <article>
                 	       <h2><?php the_title(); ?></h2>
+                               <small><?php the_date(); ?></small>
+                               <p><?php echo get_avatar( get_the_author_meta( 'user_email' ), 70 ); ?></p>
+                               <p><a href="http://www.twitter.com/<?php the_author_meta('twitter'); ?>">@<?php the_author_meta('twitter'); ?></a> </p>
+                               <p>Article by, <?php the_author_meta('first_name'); ?> <?php the_author_meta('last_name'); ?></p>
+                               <p><?php the_author_meta( 'description' ); ?></p>
+                               
                 		
                                 <?php the_content(); ?>
                 	</article>	
@@ -31,6 +37,12 @@
                         <!--LinkedIn-->
                         <li><a class="button" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php the_permalink(); ?>">Share</a></li>
                 </ul>
+
+                <?php dynamic_sidebar('Aside'); ?>
+
+                <h3>Comments</h3>
+
+                <?php comments_template(); ?>
 
         </div> <!-- #container -->
 

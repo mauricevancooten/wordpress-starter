@@ -4,23 +4,23 @@
 
 	<div id="container">
     
-	   	<?php query_posts('showposts=&order=ASC'); ?>
+   	<?php query_posts('showposts=&order=ASC'); ?>
 
-		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+	<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
-	      	<article>
+      	<article>
 
-				<h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" /><?php the_title(); ?></a></h2>
-					
-				<?php the_content(); ?>
-
-			</article>
+			<h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" /><?php the_title(); ?></a></h2>
 				
-		<?php endwhile; else: ?>
+			<?php the_content(); ?>
 
-			<p><?php_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+		</article>
+			
+<?php endwhile; else: ?>
 
-		<?php endif; ?>
+<p><?php_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+
+<?php endif; ?>
 
 	</div> <!-- #container -->
 
