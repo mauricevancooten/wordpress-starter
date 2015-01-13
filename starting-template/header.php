@@ -5,14 +5,15 @@
   
   <meta charset="utf-8">
   <title><?php wp_title() ?></title>
-  <meta name="robots" content="index, follow, noodp, noydir">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <link rel="stylesheet" type="text/css" href="<?php echo site_url(); ?>/wp-content/themes/starting-template/public/assets/css/styles.css" >
+  <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo( 'template_url' ); ?>/assets/css/styles.css" >
+  
+  <?php wp_head(); ?> 
 
 </head>
 
