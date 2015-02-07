@@ -1,16 +1,16 @@
-h1. WordPress Templates
+# WordPress Templates
 
-h2. Requirements
+## Requirements
 
-# "WordPress":http://wordpress.com
-# "Contact Form 7":http://contactform7.com/download/ WordPress plugin.
+1. [WordPress](http://wordpress.com)
+2. [Contact Form 7](http://contactform7.com/download/) WordPress plugin.
 
-h2. Installing Required Tools
+## Installing Required Tools
 
-# Install WordPress.
-# Install Contact Form 7 WordPress plugin.
-# Install Yoast SEO WordPress plugin.
+1. Install WordPress.
+2. Install Contact Form 7 WordPress plugin.
+3. Install Yoast SEO WordPress plugin.
 
-h2. License
+## License
 
 Licensed under MIT license
