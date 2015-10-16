@@ -1,23 +1,23 @@
 <?php get_header(); ?>
 
-<div id="wrapper">
+<div class="wrapper">
 
-	<div id="container">
+	<div class="container">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<article>
 
-			<h2><?php the_title(); ?></h2>
+				<h2><?php the_title(); ?></h2>
 
-			<?php the_content(); ?>
+				<?php the_content(); ?>
 
 			</article>
 
 		<?php endwhile; ?>
 
-	</div> <!-- #container -->
+	</div> <!-- .container -->
 
-</div> <!-- #wrapper -->
+</div> <!-- .wrapper -->
 
 <?php get_footer(); ?>
