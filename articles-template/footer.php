@@ -1,6 +1,6 @@
 <footer>
 
-	<p><small>Website by the Author</small></p>
+	<small>Website by the Author</small>
     
 </footer>
 

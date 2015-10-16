@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<div id="wrapper">
+<div class="wrapper">
 
-	<div id="container">
+	<div class="container">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -16,8 +16,8 @@
 
 		<?php endwhile; ?>
 
-	</div> <!-- #container -->
+	</div> <!-- .container -->
 
-</div> <!-- #wrapper -->
+</div> <!-- .wrapper -->
 
 <?php get_footer(); ?>

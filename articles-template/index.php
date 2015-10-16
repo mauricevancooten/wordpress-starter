@@ -1,30 +1,27 @@
 <?php get_header(); ?>
 
-<div id="wrapper">
+<div class="wrapper">
 
-	<div id="container">
-    
-   	<?php query_posts('showposts=&order=ASC'); ?>
+	<div class="container">
 
-	<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
-      	<article>
+      <article>
 
-			<h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" /><?php the_title(); ?></a></h2>
-				
-			<?php the_content(); ?>
+				<h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" /><?php the_title(); ?></a></h2>
+					
+				<?php the_content(); ?>
 
-		</article>
+			</article>
 			
-<?php endwhile; else: ?>
+	<?php endwhile; else: ?>
 
-<p><?php_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+		<p><?php_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 
-<?php endif; ?>
+	<?php endif; ?>
 
-	</div> <!-- #container -->
+	</div> <!-- .container -->
 
-</div> <!-- #wrapper -->
-
+</div> <!-- .wrapper -->
 
 <?php get_footer(); ?>
