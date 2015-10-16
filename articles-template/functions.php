@@ -26,7 +26,7 @@ register_sidebar( $aside_sidebar );
 // Thumbnails
 
 add_theme_support( 'post-thumbnails' );
-set_post_thumbnail_size( 380, 380, true );
+set_post_thumbnail_size( 240, 240, true );
 
 // Replaces the excerpt "more" text by a link
 
