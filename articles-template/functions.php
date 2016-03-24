@@ -2,11 +2,7 @@
 
 // Register menu
 
-register_nav_menus(
-	array(
-	'main-menu' => 'Main Menu'
-	)
-);
+register_nav_menu('main-menu','Main Menu');
 
 // Register aside sidebar
 
@@ -16,9 +12,9 @@ $aside_sidebar = array(
     'description'   => 'Widgets placed here will go on the right hand side bar',
     'class'         => '',
     'before_widget' => '<div>',
-    'after_widget'  => "</div>\n",
+    'after_widget'  => '</div>',
     'before_title'  => '<h3>',
-    'after_title'   => "</h3>\n",
+    'after_title'   => '</h3>',
 );
 
 register_sidebar( $aside_sidebar );
