@@ -16,12 +16,7 @@ register_nav_menu('main-menu','Main Menu');
 $aside_sidebar = array(
     'name'          => 'Aside',
     'id'            => 'aside',
-    'description'   => 'Widgets placed here will go on the right hand side bar',
-    'class'         => '',
-    'before_widget' => '<div>',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>',
+    'description'   => 'Widgets placed here will go on the right hand side bar'
 );
 
 register_sidebar( $aside_sidebar );
