@@ -22,7 +22,7 @@
 
         <?php endwhile; else: ?>
 
-            <p><?php_e( 'Sorry, no posts matched your criteria.' ); ?></p> 
+            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p> 
 
         <?php endif; ?> 
 
