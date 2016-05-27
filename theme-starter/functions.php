@@ -25,11 +25,3 @@ register_sidebar( $aside_sidebar );
 
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 240, 240, true );
-
-// Replaces the excerpt "more" text by a link
-
-function new_excerpt_more($more) {
-       global $post;
-    return '<a class="moretag" title="'. get_the_title($post->ID) . '" href="'. get_permalink($post->ID) . '"> Read more...</a>';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
