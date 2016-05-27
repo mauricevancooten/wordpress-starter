@@ -12,15 +12,9 @@
     <header>
 
       <h1><?php echo get_bloginfo( 'name' ); ?></h1>
-      
-    </header> 
 
-      <nav class="site-navigation">
-          <?php wp_nav_menu(array(
-            'theme_location' => 'main-menu', 
-            'container' => false,
-            'menu_id' => false,
-            'items_wrap' => '<ul>%3$s</ul>'
-            )
-          ); ?>
+      <nav>
+        <?php wp_nav_menu(); ?>
       </nav>
+      
+    </header>
