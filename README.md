@@ -18,7 +18,7 @@ Template to start a child theme.
 
 Template to start a WooCommerce theme.
 
-## Installing Wordpress on Localhost.
+## Installing WordPress on Localhost.
 
 See WordPress Installation Guide.
 
